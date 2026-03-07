@@ -1,0 +1,4 @@
+﻿config/config.local.json
+*.log
+*.tmp
+.vscode/

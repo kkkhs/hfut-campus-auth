@@ -1,0 +1,22 @@
+﻿{
+  "auth_mode": "drcom_hfut",
+  "portal_page_url": "http://172.18.3.3/0.htm",
+  "http_method": "POST",
+  "content_type": "application/x-www-form-urlencoded",
+  "request_headers": {
+    "User-Agent": "hfut-campus-auth/1.0"
+  },
+  "success_match": {
+    "status_codes": [200],
+    "contains_any": ["成功", "Success", "已在线", "您已经在线"],
+    "not_contains_any": ["密码错误", "账号错误", "失败", "error"]
+  },
+  "max_retries": 5,
+  "retry_interval_sec": 10,
+  "interface_mode": "ethernet_only",
+  "portal_url": "",
+  "payload_template": {
+    "username": "{{username}}",
+    "password": "{{password}}"
+  }
+}
